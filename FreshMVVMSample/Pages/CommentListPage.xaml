@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="FreshMVVMSample.CommentListPage" Title="{Binding Title}">
+<ContentPage.ToolbarItems>
+	<ToolbarItem Name="Close" Command="{Binding CloseCommand}" Icon="close.png" />
+</ContentPage.ToolbarItems>
+<ContentPage.Content>
+        <ListView ItemsSource="{Binding Activity.Comments}" HasUnevenRows="true">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                	<ViewCell>
+                		<StackLayout VerticalOptions="StartAndExpand" Orientation="Vertical" Padding="0">
+	                		<StackLayout VerticalOptions="StartAndExpand" HorizontalOptions="StartAndExpand" Orientation="Horizontal" Padding="5,0,5,0">
+	                			<StackLayout VerticalOptions="StartAndExpand" Orientation="Vertical" Padding="5" >
+	                				<Image Source="{Binding User.GravatarUrl}" Aspect="AspectFill" HeightRequest="100" WidthRequest="100" />
+			                		<Label Text="{Binding User.Name}" HorizontalOptions="CenterAndExpand" />
+	                			</StackLayout>
+		                		<Label Text="{Binding Body}" />
+	                		</StackLayout>
+                		</StackLayout>
+	               	</ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </ContentPage.Content>
+</ContentPage>
+

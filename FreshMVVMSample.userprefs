@@ -1,0 +1,17 @@
+﻿<Properties StartupItem="Droid\FreshMVVMSample.Droid.csproj" RefactoringSettings.EnableRefactorings="True">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Nexus 4 (Lollipop)" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="FreshMVVMSample\Pages\ActivityListPage.xaml">
+    <Files>
+      <File FileName="FreshMVVMSample\PageModels\ActivityListPageModel.cs" Line="49" Column="3" />
+      <File FileName="FreshMVVMSample\PageModels\CommentListPageModel.cs" Line="40" Column="7" />
+      <File FileName="FreshMVVMSample\Pages\CommentListPage.xaml" Line="16" Column="35" />
+      <File FileName="FreshMVVMSample\Services\ActivityService.cs" Line="21" Column="4" />
+      <File FileName="FreshMVVMSample\Models\User.cs" Line="18" Column="44" />
+      <File FileName="FreshMVVMSample\Pages\ActivityListPage.xaml" Line="34" Column="34" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
