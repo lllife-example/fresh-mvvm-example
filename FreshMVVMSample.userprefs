@@ -1,5 +1,5 @@
-﻿<Properties StartupItem="Droid\FreshMVVMSample.Droid.csproj" RefactoringSettings.EnableRefactorings="True">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Nexus 4 (Lollipop)" />
+﻿<Properties StartupItem="Droid/FreshMVVMSample.Droid.csproj" RefactoringSettings.EnableRefactorings="True">
+  <MonoDevelop.Ide.ItemProperties.FreshMVVMSample.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.C9A69641-F419-4B7C-96F0-48EB5846E89B" />
   <MonoDevelop.Ide.Workbench ActiveDocument="FreshMVVMSample\Pages\ActivityListPage.xaml">
     <Files>
       <File FileName="FreshMVVMSample\PageModels\ActivityListPageModel.cs" Line="49" Column="3" />
@@ -10,8 +10,8 @@
       <File FileName="FreshMVVMSample\Pages\ActivityListPage.xaml" Line="34" Column="34" />
     </Files>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.FreshMVVMSample.Droid PreferredExecutionTarget="Android.Nexus 10 (KitKat)" />
 </Properties>

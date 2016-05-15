@@ -10,16 +10,9 @@ namespace FreshMVVMSample
 		public App ()
 		{
 			FreshIOC.Container.Register<IActivityService, ActivityService> ();
-
-			//var page = FreshPageModelResolver.ResolvePageModel<ActivityListPageModel> ();
-			//var basicNavContainer = new FreshNavigationContainer (page);
-			//MainPage = basicNavContainer;
-
 			var tabbedNavigation = new FreshTabbedNavigationContainer ();
 			tabbedNavigation.AddTab<ActivityListPageModel> ("Activities", null);
 			MainPage = tabbedNavigation;
-
-//			MainPage = new NavigationPage(page);
 		}
 
 		protected override void OnStart ()
