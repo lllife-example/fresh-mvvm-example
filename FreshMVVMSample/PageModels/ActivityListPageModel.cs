@@ -50,7 +50,8 @@ namespace FreshMVVMSample
 		public Command<Activity> ViewComments {
 			get {
 				return new Command<Activity> (async (activity) => {
-					await CoreMethods.PushPageModel<CommentListPageModel> (activity, true);
+					//await CoreMethods.PushPageModel<CommentListPageModel> (activity, true);
+					await CoreMethods.PushPageModelWithNewNavigation<CommentListPageModel> (activity, true);
 					//await CoreMethods.DisplayAlert ("Going to comments", activity.Title, "Ok");
 				});
 			}

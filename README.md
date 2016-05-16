@@ -1,8 +1,8 @@
 ## FreshMVVM
 
-เป็น MVVM framework ขนาดเล็ก ในตัวอย่างนี้มีการใช้ฟีเจอร์
+เป็น MVVM framework ออกแบบให้มีขนาดเล็กและง่ายต่อการใช้งาน
 
-- Inversion of Control (IOC) ผ่าน Constructure injection.
+![](Screen/fresh-mvvm.png)
 
 ## โครงสร้างโปรเจค
 
@@ -39,3 +39,7 @@
 ## Api ที่เกี่ยวข้อง
 
 - FreshIOC.Container.Register, FreshBasePageModel - https://github.com/rid00z/FreshMvvm
+
+## Link
+
+- http://www.michaelridland.com/xamarin/freshmvvm-quick-start-guide

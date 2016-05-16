@@ -2,6 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
 xmlns:local="clr-namespace:FreshMVVMSample"
+xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
 x:Class="FreshMVVMSample.ActivityListPage" Title="{Binding Title}">
 
 <ContentPage.Resources>
@@ -19,16 +20,30 @@ x:Class="FreshMVVMSample.ActivityListPage" Title="{Binding Title}">
                 		<StackLayout VerticalOptions="StartAndExpand" Orientation="Vertical" Padding="0">
 	                		<StackLayout VerticalOptions="StartAndExpand" HorizontalOptions="StartAndExpand" Orientation="Horizontal" Padding="5,0,5,0">
 	                			<StackLayout VerticalOptions="StartAndExpand" Orientation="Vertical" Padding="5" >
-	                				<Image Source="{Binding User.GravatarUrl}" Aspect="AspectFill" HeightRequest="100" WidthRequest="100" />
+									<controls:CircleImage Source="{Binding User.GravatarUrl}" Aspect="AspectFit">
+									  <controls:CircleImage.WidthRequest>
+									    <OnPlatform x:TypeArguments="x:Double"
+									      iOS="75"
+									      Android="55"
+									      WinPhone="75"/>
+									   </controls:CircleImage.WidthRequest>
+									<controls:CircleImage.HeightRequest>
+									    <OnPlatform x:TypeArguments="x:Double"
+									      iOS="75"
+									      Android="55"
+									      WinPhone="75"/>
+									   </controls:CircleImage.HeightRequest>
+									</controls:CircleImage>
 			                		<Label Text="{Binding User.Name}" HorizontalOptions="CenterAndExpand" />
 	                			</StackLayout>
-		                		<Label Text="{Binding Title}" />
+		                		<Label Text="{Binding Title}" HorizontalOptions="Center" />
 	                		</StackLayout>
-	                		<StackLayout VerticalOptions="StartAndExpand" Orientation="Horizontal" Padding="5" BackgroundColor="White">
-	                			<Label Text="{Binding Comments.Count, StringFormat='{0} Comments'}">
+	                		<StackLayout HorizontalOptions="CenterAndExpand" Orientation="Horizontal" Padding="5" BackgroundColor="White">
+	                			<Label Text="{Binding Comments.Count, StringFormat='{0} Comments'}" Font="10" TextColor="Silver">
 	                				<Label.GestureRecognizers>
-	                					<TapGestureRecognizer Command="{StaticResource navigateCommand}"
-                                    CommandParameter="{Binding .}" />
+	                					<TapGestureRecognizer  
+											Command="{StaticResource navigateCommand}" 
+											CommandParameter="{Binding .}" />
 	                				</Label.GestureRecognizers>
 	                			</Label>
 	                		</StackLayout>

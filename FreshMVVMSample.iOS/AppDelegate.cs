@@ -1,6 +1,7 @@
 ﻿using Foundation;
 using UIKit;
 using Xamarin.Forms;
+using ImageCircle.Forms.Plugin.iOS;
 
 namespace FreshMVVMSample.iOS
 {
@@ -17,6 +18,8 @@ namespace FreshMVVMSample.iOS
 			// If not required for your application you can safely delete this method
 
 			global::Xamarin.Forms.Forms.Init ();
+			ImageCircleRenderer.Init ();
+
 			LoadApplication (new FreshMVVMSample.App ());
 			return base.FinishedLaunching (application, launchOptions);
 		}

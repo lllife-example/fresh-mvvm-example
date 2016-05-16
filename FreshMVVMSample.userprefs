@@ -1,13 +1,9 @@
-﻿<Properties StartupItem="Droid/FreshMVVMSample.Droid.csproj" RefactoringSettings.EnableRefactorings="True">
+﻿<Properties StartupItem="FreshMVVMSample.iOS/FreshMVVMSample.iOS.csproj" RefactoringSettings.EnableRefactorings="True">
   <MonoDevelop.Ide.ItemProperties.FreshMVVMSample.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.C9A69641-F419-4B7C-96F0-48EB5846E89B" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="FreshMVVMSample\Pages\ActivityListPage.xaml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="FreshMVVMSample/PageModels/ActivityListPageModel.cs">
     <Files>
-      <File FileName="FreshMVVMSample\PageModels\ActivityListPageModel.cs" Line="49" Column="3" />
-      <File FileName="FreshMVVMSample\PageModels\CommentListPageModel.cs" Line="40" Column="7" />
-      <File FileName="FreshMVVMSample\Pages\CommentListPage.xaml" Line="16" Column="35" />
-      <File FileName="FreshMVVMSample\Services\ActivityService.cs" Line="21" Column="4" />
-      <File FileName="FreshMVVMSample\Models\User.cs" Line="18" Column="44" />
-      <File FileName="FreshMVVMSample\Pages\ActivityListPage.xaml" Line="34" Column="34" />
+      <File FileName="FreshMVVMSample/PageModels/CommentListPageModel.cs" Line="18" Column="33" />
+      <File FileName="FreshMVVMSample/PageModels/ActivityListPageModel.cs" Line="53" Column="19" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
