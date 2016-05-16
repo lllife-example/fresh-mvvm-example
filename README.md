@@ -4,7 +4,7 @@
 - ทั้งสอง Page จะมี ViewModel คู่กันคือ ActivityListPageModel และ CommentListPageModel
 - Page และ ViewModel จะ Link กันอัตโนมัติผ่าน Fresh Mvvm
 - ในโปรแกรมจะมีการใช้ Depedency Injection ผ่าน FreshIOC
-- FreshIOC.Container.Register<IActivityService, ActivityService> ();
+- `FreshIOC.Container.Register<IActivityService, ActivityService> ()`
 
 ![](Screen/fresh-mvvm.png)
 
