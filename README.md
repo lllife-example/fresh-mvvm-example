@@ -1,12 +1,12 @@
-## FreshMVVM
-
-![](Screen/fresh-mvvm.png)
+## Fresh Mvvm
 
 - โปรแกรมมี 2 Page คือ ActivityListPage และ CommentListPage
-- ทั้งสอง Page จะมี ViewModel คู่กันคือ ActivityListPageModel และ CommentPageModel
-- Page และ ViewModel จะ Link กันอัตโนมัติผ่าน FreshMVVM
+- ทั้งสอง Page จะมี ViewModel คู่กันคือ ActivityListPageModel และ CommentListPageModel
+- Page และ ViewModel จะ Link กันอัตโนมัติผ่าน Fresh Mvvm
 - ในโปรแกรมจะมีการใช้ Depedency Injection ผ่าน FreshIOC
 - FreshIOC.Container.Register<IActivityService, ActivityService> ();
+
+![](Screen/fresh-mvvm.png)
 
 ## โครงสร้างโปรเจค
 
