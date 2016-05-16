@@ -1,8 +1,12 @@
 ## FreshMVVM
 
-เป็น MVVM framework ออกแบบให้มีขนาดเล็กและง่ายต่อการใช้งาน
-
 ![](Screen/fresh-mvvm.png)
+
+- โปรแกรมมี 2 Page คือ ActivityListPage และ CommentListPage
+- ทั้งสอง Page จะมี ViewModel คู่กันคือ ActivityListPageModel และ CommentPageModel
+- Page และ ViewModel จะ Link กันอัตโนมัติผ่าน FreshMVVM
+- ในโปรแกรมจะมีการใช้ Depedency Injection ผ่าน FreshIOC
+- FreshIOC.Container.Register<IActivityService, ActivityService> ();
 
 ## โครงสร้างโปรเจค
 
